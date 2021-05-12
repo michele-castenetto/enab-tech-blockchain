@@ -57,13 +57,13 @@
 
     loadModelOnEngine({
         domNode: document.querySelector("#start canvas"),
-        modelPath: "../3dmodels/lock.glb"
+        modelPath: "./3dmodels/lock.glb"
     });
 
 
     // loadModelOnEngine({
     //     domNode: document.querySelector("#smart-city canvas"),
-    //     modelPath: "../3dmodels/city1.glb"
+    //     modelPath: "./3dmodels/city1.glb"
     // });
 
 
