@@ -12,15 +12,40 @@
     <meta name="description" content="Presentation on enabling technologies" />
     <meta name="author" content="Michele Castenetto" />
     
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./slides.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/bg.css">
+
+    <link rel="stylesheet" href="./styles/pages/front.css">
+    <link rel="stylesheet" href="./styles/pages/menu.css">
+    <link rel="stylesheet" href="./styles/pages/storia.css">
+
+
+    
+
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+
 
 </head>
 
 
 <body>
 
-    
+
+
+<!-- <div class="box_bg_canvas">
+    <canvas id="bg_canvas"></canvas>
+</div> -->
+<div id="bg_animated" class="box_bg_canvas"></div>
+
+
+
 <div id="impress"
     data-transition-duration="1000"
     
@@ -41,31 +66,116 @@
 
 
     <div id="front" class="step slide" data-x="0" data-y="-1000">
-
-        <div class="box_image">
-            <img src="./images/logo_uniud.png" alt="">
-        </div>
-
         <div class="slide-content">
             
-            <h1> Enabling technologies </h1>
-            <h2> Cybersecurity </h2>
+            <div class="box_image">
+                <img src="./images/logo_uniud.png" alt="">
+            </div>
+
+            <div class="box_title">
+
+                <h2> Presentazione Tecnologie abilitanti </h2>
+                <h1> Blockchain </h1>
+            
+            </div>
+
+            <div class="box_infos">
+
+                <div class="box_info">
+                    <div class="label">Corso</div>
+                    <div class="value">Interaction Design</div>
+                </div>
+
+                <div class="box_info">
+                    <div class="label">Docente</div>
+                    <div class="value">Paolo Cesare Atzori</div>
+                </div>
+
+            </div>
 
         </div>
-
-
     </div>
 
 
-    <div id="start" class="step slide" data-x="0" data-y="0">
+    <div id="menu" class="step slide" data-x="0" data-y="0">
 
         <div class="slide-content">
             
-            <div class="model3d">
+            <div class="box_3d">
+
+                <!-- ##REF https://dev.to/joeattardi/let-s-make-a-css-cube-1fed  -->
+
+
+                <a href="#storia">
+                    <div class="cube_wrapper">
+                        <div class="cube">
+                            <div class="cube_face top">Storia</div>
+                            <div class="cube_face bottom">Storia</div>
+                            <div class="cube_face left">Storia</div>
+                            <div class="cube_face right">Storia</div>
+                            <div class="cube_face front"></div>
+                            <div class="cube_face back"></div>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="cube_wrapper">
+                    <div class="cube">
+                        <div class="cube_face top">Cos'è</div>
+                        <div class="cube_face bottom">Cos'è</div>
+                        <div class="cube_face left">Cos'è</div>
+                        <div class="cube_face right">Cos'è</div>
+                        <div class="cube_face front"></div>
+                        <div class="cube_face back"></div>
+                    </div>
+                </div>
+
+                <div class="cube_wrapper">
+                    <div class="cube">
+                        <div class="cube_face top">Applicazioni</div>
+                        <div class="cube_face bottom">Applicazioni</div>
+                        <div class="cube_face left">Applicazioni</div>
+                        <div class="cube_face right">Applicazioni</div>
+                        <div class="cube_face front"></div>
+                        <div class="cube_face back"></div>
+                    </div>
+                </div>
+
+                <div class="cube_wrapper">
+                    <div class="cube">
+                        <div class="cube_face top">Problemi</div>
+                        <div class="cube_face bottom">Problemi</div>
+                        <div class="cube_face left">Problemi</div>
+                        <div class="cube_face right">Problemi</div>
+                        <div class="cube_face front"></div>
+                        <div class="cube_face back"></div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="cube_wrapper">
+                    <div class="cube">
+                        <div class="cube_face top">Blockchain</div>
+                        <div class="cube_face bottom"></div>
+                        <div class="cube_face left">Blockchain</div>
+                        <div class="cube_face right"></div>
+                        <div class="cube_face front">Blockchain</div>
+                        <div class="cube_face back"></div>
+                    </div>
+                </div> -->
+
+
+                <!-- <div class="box_menu_button"> Cryptocurrency </div>
+                <div class="box_menu_button"> Smart City </div>
+                <div class="box_menu_button"> Smart Contracts </div>
+                <div class="box_menu_button"> Criticità </div> -->
+
+
                 <canvas></canvas>
+
             </div>
 
-            <h1> Cybersecurity </h1>
+            <!-- <h1> Cybersecurity </h1> -->
             <!-- <img class="background-image" src="./images/cybersecurity2.jpg" alt=""> -->
 
         </div>
@@ -74,20 +184,121 @@
     </div>
 
 
-    <div id="smart-city" class="step slide" data-x="2000" data-y="0">
 
+    <div id="storia" class="step slide" data-x="1000" data-y="1000" data-z="0">
         <div class="slide-content">
             
-            <div class="model3d">
-                <canvas></canvas>
-            </div>
+            <!-- <div class="container"> -->
+
+                <div class="box_image">
+                    <img src="./images/cube.png" alt="">
+                </div>
+    
+                <div class="box_title">
+    
+                    <h1> Storia </h1>
+                    <h2> Breve storia dell'evoluzione della blockchain </h2>
+                    
+                </div>
+
+            
 
         </div>
-
     </div>
 
 
-    <div id="rotx-1" class="step slide" data-x="-2000" data-y="-420" data-z="0" data-rotate-x="0">
+
+    <div id="timeline" class="step slide" data-x="1000" data-y="1000" data-z="-2000">
+        <div class="slide-content">
+
+            <div class="slide-image">
+                <img src="./images/slides/timeline.png" alt="">
+            </div>
+
+            <a class="interaction_link" href="#timeline_1998">
+                <div class="interaction_circle" data-year="1998"></div>
+            </a>
+            <a class="interaction_link" href="#timeline_2008">
+                <div class="interaction_circle" data-year="2008"></div> 
+            </a>
+            <a class="interaction_link" href="#timeline_2017">
+                <div class="interaction_circle" data-year="2017"></div>
+            </a>
+
+            
+            
+            
+
+
+            <!-- <div class="box_title">
+                <h3>Blockchain imeline</h3>
+            </div>
+
+
+            <div class="line"></div>
+
+            <div class="circle">
+                <div class="year">1991</div>
+                <div class="description">A cryptographically secured chain of blocks is described for the first time by Stuart Haber and W Scott Stornetta</div>
+            </div>  -->
+
+
+            
+
+        </div>
+    </div>
+
+
+    <div id="timeline_1998" class="step slide imageslide" data-x="3000" data-y="1000" data-z="-4000">
+        <div class="slide-content">
+
+            <img src="./images/slides/timeline_1998.png" alt="">
+            
+        </div>
+    </div>
+
+
+    <div id="timeline_2008" class="step slide imageslide" data-x="5000" data-y="1000" data-z="-6000">
+        <div class="slide-content">
+
+            <img src="./images/slides/timeline_2008.png" alt="">
+            
+        </div>
+    </div>
+
+
+    <div id="timeline_2017" class="step slide imageslide" data-x="7000" data-y="1000" data-z="-8000">
+        <div class="slide-content">
+
+            <img src="./images/slides/timeline_2017.png" alt="">
+            
+        </div>
+    </div>
+
+
+    <!-- <div id="smart-city" class="step slide" data-x="2000" data-y="0">
+
+
+        <div class="box_video">
+            
+            <iframe id="player" type="text/html" 
+                src="https://www.youtube.com/watch?v=hptnqfzXido" frameborder="0"
+            >
+            </iframe>
+            <div class="panel_video">
+
+                <video>
+                    <source src="./video/ethereum.mp4" type="video/mp4">
+                </video>
+
+            </div>
+            
+        </div>
+
+    </div> -->
+
+
+    <!-- <div id="rotx-1" class="step slide" data-x="-2000" data-y="-420" data-z="0" data-rotate-x="0">
         1
     </div>
     <div id="rotx-2" class="step slide" data-x="-2000" data-y="0" data-z="-420" data-rotate-x="90">
@@ -98,12 +309,12 @@
     </div>
     <div id="rotx-4" class="step slide" data-x="-2000" data-y="0" data-z="420" data-rotate-x="270">
         4
-    </div>
+    </div> -->
 
 
 
 
-    <div id="2" class="step slide" data-x="0" data-y="1000">
+    <!-- <div id="2" class="step slide" data-x="0" data-y="1000">
 
         Second slide
 
@@ -118,16 +329,16 @@
         </div>
 
 
-    </div>
+    </div> -->
 
 
-    <div id="3" class="step slide" data-x="0" data-y="3000" data-rotate="90" data-scale="2">
+    <!-- <div id="3" class="step slide" data-x="0" data-y="3000" data-rotate="90" data-scale="2">
         Third slide
     </div>
 
     <div id="4" class="step slide" data-x="3000" data-y="3000" data-rotate="180" data-scale="3">
         Forth slide
-    </div>
+    </div> -->
 
 
     <!-- <div id="4-1" class="step slide" data-x="3000" data-y="3000" data-z="-2000" data-rotate="0" data-scale="1">
@@ -135,21 +346,15 @@
     </div> -->
 
 
-    <div id="5" class="step slide" data-x="1000" data-y="1000" data-z="-2000">
-
+    <!-- <div id="5" class="step slide" data-x="1000" data-y="1000" data-z="-2000">
         5
-
         <a href="#1"> home </a>
-
     </div>
 
     <div id="6" class="step slide" data-x="0" data-y="1000" data-z="-4000">
-
         6
-
         <a href="#1"> home </a>
-
-    </div>
+    </div> -->
 
 
     <!-- <div id="overview" class="step" data-x="0" data-y="0" data-z="0" data-scale="10">
@@ -170,6 +375,24 @@
 
 <script src="./js/impress.js"></script>
 <script src="./index.js"></script>
+
+
+
+<!-- <script src="https://code.createjs.com/easeljs-0.7.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<script src="./bg__T1.js"></script> -->
+
+
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script> -->
+<script src="./js/particles.js"></script>
+
+<script src="./js/bg.js"></script>
+
+
+<script src="./js/pages/timeline.js"></script>
+
+
 
 
 </body>

@@ -1,0 +1,148 @@
+#storia .slide-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#storia .box_image {
+  width: 200px;
+}
+
+#storia .box_image img {
+  width: 100%;
+}
+
+#storia .box_title {
+  margin-left: 2rem;
+  color: #68B882;
+}
+
+#storia .box_title h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+#storia .box_title h2 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.imageslide.slide {
+  overflow: visible;
+  padding: 0;
+  border: 0;
+}
+
+.imageslide img {
+  border: 2px solid #ddd;
+  height: 100%;
+  -webkit-transform: translate(-200px, 0);
+          transform: translate(-200px, 0);
+}
+
+#timeline.slide {
+  overflow: visible;
+  padding: 0;
+  border: 0;
+}
+
+#timeline .slide-image {
+  height: 100%;
+  -webkit-transform: translate(-200px, 0);
+          transform: translate(-200px, 0);
+}
+
+#timeline .slide-image img {
+  border: 2px solid #ddd;
+  height: 100%;
+}
+
+#timeline .interaction_circle {
+  z-index: 10;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  position: absolute;
+  top: 440px;
+}
+
+#timeline .interaction_circle[data-year="1998"] {
+  left: 52px;
+}
+
+#timeline .interaction_circle[data-year="2008"] {
+  left: 198px;
+}
+
+#timeline .interaction_circle[data-year="2017"] {
+  left: 630px;
+}
+
+#timeline .box_title {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  color: #68B882;
+}
+
+#timeline .box_title h3 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+#timeline .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #68B882;
+  width: 95%;
+  height: 8px;
+}
+
+#timeline .circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  border: 20px solid #68B882;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+#timeline .circle .year {
+  position: absolute;
+  top: -80px;
+  font-size: 2rem;
+  font-weight: 700;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+#timeline .circle .description {
+  position: absolute;
+  top: -250px;
+  font-size: 1rem;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+}
+
+#timeline .circle:nth-child(1) {
+  left: 100px;
+}
+/*# sourceMappingURL=storia.css.map */

@@ -137,11 +137,13 @@ var Engine3d = (function() {
         };
 
 
-        Engine3d.prototype.startRotate = function(node) {
+        Engine3d.prototype.startRotate = function(speed) {
             var scene = this.scene;
+
+            speed = speed || -0.5;
+
             var rotationHandler = function() {
-                scene.activeCamera.alpha += BABYLON.Tools.ToRadians(-0.5);
-                // node.rotate(BABYLON.Axis.X, BABYLON.Tools.ToRadians(-0.5), BABYLON.Space.LOCAL);
+                scene.activeCamera.alpha += BABYLON.Tools.ToRadians(speed);
             };
             this.rotationHandler = rotationHandler;
             this.scene.registerBeforeRender(rotationHandler);

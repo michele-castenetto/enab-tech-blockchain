@@ -1,0 +1,64 @@
+#front .slide-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#front .box_image {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 150px;
+}
+
+#front .box_image img {
+  width: 100%;
+}
+
+#front .box_title h2 {
+  text-align: center;
+  color: #444;
+  margin: 0;
+  padding: 0;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+#front .box_title h1 {
+  text-align: center;
+  color: #68B882;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  font-size: 6rem;
+}
+
+#front .box_infos {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+#front .box_infos .box_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+#front .box_infos .box_info .label {
+  width: 8rem;
+  font-weight: 700;
+  color: #444;
+}
+
+#front .box_infos .box_info .value {
+  color: #444;
+}
+/*# sourceMappingURL=front.css.map */

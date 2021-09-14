@@ -1,0 +1,181 @@
+
+
+#storia {
+
+    .slide-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box_image {
+        width: 200px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+    .box_title {
+        margin-left: 2rem;
+        color: #68B882;
+        h1 {
+            font-size: 4rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+}
+
+
+.imageslide {
+
+    &.slide {
+        overflow: visible;
+        padding: 0;
+        border: 0;
+    }
+    
+    img {
+        border: 2px solid #ddd;
+        height: 100%;
+        transform: translate(-200px ,0);
+    }
+    
+}
+
+
+
+#timeline {
+
+    &.slide {
+        overflow: visible;
+        padding: 0;
+        border: 0;
+    }
+
+
+    .slide-image {
+        
+        height: 100%;
+        transform: translate(-200px ,0);
+        img {
+            border: 2px solid #ddd;
+            height: 100%;
+        }
+    }
+
+    .interaction_circle {
+        // border: 2px solid purple;
+
+        
+        // border: 5px solid #68B882;
+        z-index: 10;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: transparent;
+        position: absolute;
+        // top: 50%;
+        // transform: translate(0%, -50%);
+        top: 440px;
+        // left: 52px;
+
+        &[data-year="1998"] {
+            left: 52px;
+        }
+        &[data-year="2008"] {
+            left: 198px;
+        }
+        &[data-year="2017"] {
+            left: 630px;
+        }
+
+        // &:nth-child(2) {
+        //     left: 52px;
+        // }
+        // &:nth-child(3) {
+        //     left: 198px;
+        // }
+        // &:nth-child(4) {
+        //     left: 630px;
+        // }
+
+    }
+
+    .interaction_circle {
+
+    }
+
+
+    // ----------------------------------
+
+    .box_title {
+        position: absolute;
+        top: 2rem;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        color: #68B882;
+        h3 {
+            font-size: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .line {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #68B882;
+        width: 95%;
+        height: 8px;
+    }
+
+    .circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #f2f2f2;
+        border: 20px solid #68B882;
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+
+        .year {
+            position: absolute;
+            top: -80px;
+            font-size: 2rem;
+            font-weight: 700;
+            transform: translate(-50%, 0%);
+        }
+
+        .description {
+            position: absolute;
+            top: -250px;
+            font-size: 1rem;
+            transform: translate(-50%, 0%);
+        }
+
+
+        &:nth-child(1) {
+            
+
+            left: 100px;
+        }
+
+
+
+    }
+
+
+}

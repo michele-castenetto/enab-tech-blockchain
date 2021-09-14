@@ -1726,18 +1726,18 @@
         gc.addEventListener( document, "keydown", function( event ) {
 
             // 116 (F5) is sent by presentation remote controllers
-            if ( event.code === "F5" ) {
-                event.preventDefault();
-                enterFullscreen();
-                util.triggerEvent( root.querySelector( ".active" ), "impress:steprefresh" );
-            }
+            // if ( event.code === "F5" ) {
+            //     event.preventDefault();
+            //     enterFullscreen();
+            //     util.triggerEvent( root.querySelector( ".active" ), "impress:steprefresh" );
+            // }
 
             // 27 (Escape) is sent by presentation remote controllers
-            if ( event.key === "Escape" || event.key === "F5" ) {
-                event.preventDefault();
-                exitFullscreen();
-                util.triggerEvent( root.querySelector( ".active" ), "impress:steprefresh" );
-            }
+            // if ( event.key === "Escape" || event.key === "F5" ) {
+            //     event.preventDefault();
+            //     exitFullscreen();
+            //     util.triggerEvent( root.querySelector( ".active" ), "impress:steprefresh" );
+            // }
         }, false );
 
         util.triggerEvent( document, "impress:help:add",
@@ -3309,11 +3309,11 @@
         gc.addEventListener( document, "keyup", function( event ) {
             if ( isNavigationEvent( event ) ) {
                 if ( event.shiftKey ) {
-                    switch ( event.keyCode ) {
-                        case 9: // Shift+tab
-                            api.prev();
-                            break;
-                    }
+                    // switch ( event.keyCode ) {
+                    //     case 9: // Shift+tab
+                    //         api.prev();
+                    //         break;
+                    // }
                 } else {
                     switch ( event.keyCode ) {
                         case 33: // Pg up
@@ -3321,7 +3321,7 @@
                         case 38: // Up
                                  api.prev( event );
                                  break;
-                        case 9:  // Tab
+                        // case 9:  // Tab
                         case 32: // Space
                         case 34: // Pg down
                         case 39: // Right

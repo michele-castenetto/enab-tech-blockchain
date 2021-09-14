@@ -2,6 +2,7 @@
     
     var imp = impress();
     // console.log("impress", impress);
+    window.imp = imp;
     
     imp.init();
     var root = document.querySelector("body");
@@ -31,7 +32,7 @@
     
         engine3d.start();
     
-        engine3d.startRotate();
+        engine3d.startRotate(-1);
     
         engine3d.loadGeometry(modelPath, function(err, node) {
             if (err) {
@@ -55,16 +56,40 @@
 
 
 
-    loadModelOnEngine({
-        domNode: document.querySelector("#start canvas"),
-        modelPath: "./3dmodels/lock.glb"
-    });
+    // loadModelOnEngine({
+    //     domNode: document.querySelector("#menu canvas"),
+    //     modelPath: "./3dmodels/lock.glb"
+    // });
 
 
     // loadModelOnEngine({
     //     domNode: document.querySelector("#smart-city canvas"),
     //     modelPath: "./3dmodels/city1.glb"
     // });
+
+
+
+
+
+
+    // Custom events
+
+    // document.addEventListener( "app:test", function(event) {
+        
+    //     console.log("event", event);
+
+    // }, false );
+
+
+    // var event = document.createEvent( "CustomEvent" );
+    // event.initCustomEvent( "app:test", true, true, {
+    //     data: {id: 3}
+    // });
+    // window.dispatchEvent( event );
+
+
+    
+
 
 
 

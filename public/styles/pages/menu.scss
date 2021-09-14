@@ -1,0 +1,174 @@
+
+
+#menu {
+
+
+    
+    padding: 2rem;
+    
+
+
+    .box_3d {
+        // border: 2px solid purple;
+        position: relative;
+    }
+
+
+    // .box_menu_button {
+    //     position: absolute;
+    //     width: 200px;
+    //     height: 200px;
+    //     border-radius: 50%;
+    //     border: 5px solid darkslategray;
+
+    //     &:nth-child(1) {
+    //         top: 100px;
+    //         left: 100px;
+    //     }
+    //     &:nth-child(2) {
+    //         top: 100px;
+    //         right: 100px;
+    //     }
+    //     &:nth-child(3) {
+    //         bottom: 100px;
+    //         left: 100px;
+    //     }
+    //     &:nth-child(4) {
+    //         bottom: 100px;
+    //         right: 100px;
+    //     }
+    // }
+
+
+
+    @keyframes turn {
+        from {
+            transform: rotate3d(0, 0, 0, 0);
+        }
+        // to {
+        //     transform: rotate3d(1, 1, 0, 360deg);
+        // }
+        to {
+            transform: rotate3d(0.5, 1, 0, 360deg);
+        }
+    }
+
+    $edge: 150px;
+    $edgeBig: 200px;
+    // $borderDistance: 100px;
+    $borderDistance: 100px;
+
+    
+    .cube_wrapper {
+        position: absolute;
+        width: $edge;
+        height: $edge;
+        perspective: 500px;
+        // margin: 100px;
+
+        &:nth-child(1) {
+            top: $borderDistance;
+            left: $borderDistance;
+        }
+        &:nth-child(2) {
+            top: $borderDistance;
+            right: $borderDistance;
+        }
+        &:nth-child(3) {
+            bottom: $borderDistance;
+            left: $borderDistance;
+        }
+        &:nth-child(4) {
+            bottom: $borderDistance;
+            right: $borderDistance;
+        }
+
+
+    }
+
+    .cube {
+        position: relative;
+        width: $edge;
+        height: $edge;
+        transform-style: preserve-3d;
+        animation: turn 10s linear infinite;
+        cursor: pointer;
+
+        .cube_face {
+            width: $edge;
+            height: $edge;
+            // background: skyblue;
+            // border: 2px solid black;
+            border: 2px solid #444;
+            position: absolute;
+            opacity: 0.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+            font-size: 2rem;
+            transition: transform 500ms;
+        }
+    
+        .front {
+            transform: translateZ($edge/2);
+            // background-color: rgba($color: #1c4b32, $alpha: 0.3);
+            // background-color: rgba($color: #68B882, $alpha: 0.7);
+        }
+        .back {
+            transform: translateZ(-$edge/2) rotateY(180deg);
+            // background-color: rgba($color: #1c4b32, $alpha: 0.3);
+            // background-color: rgba($color: #68B882, $alpha: 0.7);
+        }
+        .left {
+            transform: translateX(-$edge/2) rotateY(-90deg);
+        }
+        .right {
+            transform: translateX($edge/2) rotateY(90deg);
+        }
+        .top {
+            transform: translateY(-$edge/2) rotateX(90deg);
+        }
+        .bottom {
+            transform: translateY($edge/2) rotateX(-90deg);
+        }
+
+        &:hover {
+            .cube_face {
+                width: $edgeBig;
+                height: $edgeBig;
+                transition: transform 1000ms;
+            }
+            .front {
+                transform: translateZ($edgeBig/2);
+            }
+            .back {
+                transform: translateZ(-$edgeBig/2) rotateY(180deg);
+            }
+            .left {
+                transform: translateX(-$edgeBig/2) rotateY(-90deg);
+            }
+            .right {
+                transform: translateX($edgeBig/2) rotateY(90deg);
+            }
+            .top {
+                transform: translateY(-$edgeBig/2) rotateX(90deg);
+            }
+            .bottom {
+                transform: translateY($edgeBig/2) rotateX(-90deg);
+            }
+        }
+
+    }
+
+
+
+    // @media (prefers-reduced-motion: reduce) {
+    //     .cube {
+    //         animation: none;
+    //         transform: rotate3d(1, 1, 0, 45deg);
+    //     }
+    // }
+
+
+}
